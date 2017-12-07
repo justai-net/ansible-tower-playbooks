@@ -1,0 +1,6 @@
+---
+- name: Playbook to ping all hosts
+  hosts: all
+  tasks:
+    - name: ping all hosts
+      ping:
