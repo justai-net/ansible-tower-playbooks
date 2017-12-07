@@ -1,4 +1,6 @@
 ---
-tasks:
-  - name: Yum update !
-    yum: name=* state=latest
+- name: Playbook to run yum update.
+  hosts: all
+  tasks:
+    - name: Yum update !
+      yum: name=* state=latest
